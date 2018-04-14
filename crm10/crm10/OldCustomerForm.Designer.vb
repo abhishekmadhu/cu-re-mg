@@ -25,16 +25,19 @@ Partial Class OldCustomerForm
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(OldCustomerForm))
         Me.OleDbSelectCommand1 = New System.Data.OleDb.OleDbCommand()
+        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
         Me.OleDbInsertCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbUpdateCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbDeleteCommand1 = New System.Data.OleDb.OleDbCommand()
         Me.OleDbDataAdapter1 = New System.Data.OleDb.OleDbDataAdapter()
-        Me.OleDbConnection1 = New System.Data.OleDb.OleDbConnection()
         Me.DataSet11 = New crm10.DataSet1()
-        Me.DataGrid1 = New System.Windows.Forms.DataGrid()
+        Me.grdProperties = New System.Windows.Forms.DataGrid()
         Me.CustomerListBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.productID = New System.Windows.Forms.Button()
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DataGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.grdProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CustomerListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,6 +45,10 @@ Partial Class OldCustomerForm
         '
         Me.OleDbSelectCommand1.CommandText = "SELECT customerList.*" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "FROM     customerList"
         Me.OleDbSelectCommand1.Connection = Me.OleDbConnection1
+        '
+        'OleDbConnection1
+        '
+        Me.OleDbConnection1.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\customers.mdb"
         '
         'OleDbInsertCommand1
         '
@@ -70,42 +77,65 @@ Partial Class OldCustomerForm
         Me.OleDbDataAdapter1.TableMappings.AddRange(New System.Data.Common.DataTableMapping() {New System.Data.Common.DataTableMapping("Table", "customerList", New System.Data.Common.DataColumnMapping() {New System.Data.Common.DataColumnMapping("ID", "ID"), New System.Data.Common.DataColumnMapping("First_Name", "First_Name"), New System.Data.Common.DataColumnMapping("Last_Name", "Last_Name"), New System.Data.Common.DataColumnMapping("Product_Category", "Product_Category"), New System.Data.Common.DataColumnMapping("Product_ID", "Product_ID")})})
         Me.OleDbDataAdapter1.UpdateCommand = Me.OleDbUpdateCommand1
         '
-        'OleDbConnection1
-        '
-        Me.OleDbConnection1.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\customers.mdb"
-        '
         'DataSet11
         '
         Me.DataSet11.DataSetName = "DataSet1"
         Me.DataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
-        'DataGrid1
+        'grdProperties
         '
-        Me.DataGrid1.DataMember = ""
-        Me.DataGrid1.DataSource = Me.CustomerListBindingSource
-        Me.DataGrid1.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.DataGrid1.Location = New System.Drawing.Point(112, 73)
-        Me.DataGrid1.Name = "DataGrid1"
-        Me.DataGrid1.Size = New System.Drawing.Size(701, 465)
-        Me.DataGrid1.TabIndex = 0
+        Me.grdProperties.DataMember = ""
+        Me.grdProperties.DataSource = Me.CustomerListBindingSource
+        Me.grdProperties.HeaderForeColor = System.Drawing.SystemColors.ControlText
+        Me.grdProperties.Location = New System.Drawing.Point(123, 199)
+        Me.grdProperties.Name = "grdProperties"
+        Me.grdProperties.Size = New System.Drawing.Size(507, 239)
+        Me.grdProperties.TabIndex = 0
         '
         'CustomerListBindingSource
         '
         Me.CustomerListBindingSource.DataMember = "customerList"
         Me.CustomerListBindingSource.DataSource = Me.DataSet11
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(123, 91)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(265, 22)
+        Me.TextBox1.TabIndex = 1
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(122, 147)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(265, 22)
+        Me.TextBox2.TabIndex = 2
+        '
+        'productID
+        '
+        Me.productID.Location = New System.Drawing.Point(434, 81)
+        Me.productID.Name = "productID"
+        Me.productID.Size = New System.Drawing.Size(196, 42)
+        Me.productID.TabIndex = 3
+        Me.productID.Text = "SEARCH BY PRODUCT ID"
+        Me.productID.UseVisualStyleBackColor = True
+        '
         'OldCustomerForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(964, 676)
-        Me.Controls.Add(Me.DataGrid1)
+        Me.Controls.Add(Me.productID)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.grdProperties)
         Me.Name = "OldCustomerForm"
         Me.Text = "OldCustomerForm"
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DataGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.grdProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CustomerListBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -116,6 +146,9 @@ Partial Class OldCustomerForm
     Friend WithEvents OleDbDeleteCommand1 As OleDb.OleDbCommand
     Friend WithEvents OleDbDataAdapter1 As OleDb.OleDbDataAdapter
     Friend WithEvents DataSet11 As DataSet1
-    Friend WithEvents DataGrid1 As DataGrid
+    Friend WithEvents grdProperties As DataGrid
     Friend WithEvents CustomerListBindingSource As BindingSource
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents productID As Button
 End Class
