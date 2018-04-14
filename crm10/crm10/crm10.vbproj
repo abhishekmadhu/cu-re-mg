@@ -72,6 +72,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomerRegistrationForm.Designer.vb">
+      <DependentUpon>CustomerRegistrationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerRegistrationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -100,8 +106,23 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="OldCustomerForm.Designer.vb">
+      <DependentUpon>OldCustomerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OldCustomerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VendorFirstForm.Designer.vb">
+      <DependentUpon>VendorFirstForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VendorFirstForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CustomerRegistrationForm.resx">
+      <DependentUpon>CustomerRegistrationForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +134,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VendorFirstForm.resx">
+      <DependentUpon>VendorFirstForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
