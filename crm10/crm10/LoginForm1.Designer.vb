@@ -100,7 +100,7 @@ Partial Class VendorLoginForm
         'Cancel
         '
         Me.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.Cancel.Location = New System.Drawing.Point(225, 118)
+        Me.Cancel.Location = New System.Drawing.Point(222, 118)
         Me.Cancel.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Cancel.Name = "Cancel"
         Me.Cancel.Size = New System.Drawing.Size(70, 19)
