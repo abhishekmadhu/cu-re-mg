@@ -36,9 +36,11 @@ Partial Class OldCustomerForm
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.productID = New System.Windows.Forms.Button()
+        Me.FileSystemWatcher1 = New System.IO.FileSystemWatcher()
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.grdProperties, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CustomerListBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'OleDbSelectCommand1
@@ -87,9 +89,10 @@ Partial Class OldCustomerForm
         Me.grdProperties.DataMember = ""
         Me.grdProperties.DataSource = Me.CustomerListBindingSource
         Me.grdProperties.HeaderForeColor = System.Drawing.SystemColors.ControlText
-        Me.grdProperties.Location = New System.Drawing.Point(123, 199)
+        Me.grdProperties.Location = New System.Drawing.Point(66, 159)
+        Me.grdProperties.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.grdProperties.Name = "grdProperties"
-        Me.grdProperties.Size = New System.Drawing.Size(507, 239)
+        Me.grdProperties.Size = New System.Drawing.Size(497, 194)
         Me.grdProperties.TabIndex = 0
         '
         'CustomerListBindingSource
@@ -99,41 +102,51 @@ Partial Class OldCustomerForm
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(123, 91)
+        Me.TextBox1.Location = New System.Drawing.Point(92, 74)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(265, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(200, 20)
         Me.TextBox1.TabIndex = 1
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(122, 147)
+        Me.TextBox2.Location = New System.Drawing.Point(92, 119)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(265, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(200, 20)
         Me.TextBox2.TabIndex = 2
         '
         'productID
         '
-        Me.productID.Location = New System.Drawing.Point(434, 81)
+        Me.productID.Location = New System.Drawing.Point(334, 74)
+        Me.productID.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.productID.Name = "productID"
-        Me.productID.Size = New System.Drawing.Size(196, 42)
+        Me.productID.Size = New System.Drawing.Size(147, 34)
         Me.productID.TabIndex = 3
         Me.productID.Text = "SEARCH BY PRODUCT ID"
         Me.productID.UseVisualStyleBackColor = True
         '
+        'FileSystemWatcher1
+        '
+        Me.FileSystemWatcher1.EnableRaisingEvents = True
+        Me.FileSystemWatcher1.SynchronizingObject = Me
+        '
         'OldCustomerForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(964, 676)
+        Me.ClientSize = New System.Drawing.Size(723, 549)
         Me.Controls.Add(Me.productID)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.grdProperties)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "OldCustomerForm"
         Me.Text = "OldCustomerForm"
         CType(Me.DataSet11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.grdProperties, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CustomerListBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.FileSystemWatcher1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -151,4 +164,5 @@ Partial Class OldCustomerForm
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents productID As Button
+    Friend WithEvents FileSystemWatcher1 As IO.FileSystemWatcher
 End Class
