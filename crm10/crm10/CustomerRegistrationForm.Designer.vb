@@ -151,12 +151,12 @@ Partial Class CustomerRegistrationForm
         Me.Button1.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Transparent
-        Me.Button1.Location = New System.Drawing.Point(245, 450)
+        Me.Button1.Location = New System.Drawing.Point(172, 476)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(129, 44)
+        Me.Button1.Size = New System.Drawing.Size(199, 64)
         Me.Button1.TabIndex = 9
-        Me.Button1.Text = "ADD"
+        Me.Button1.Text = "ADD NEW CUSTOMER"
         Me.Button1.UseVisualStyleBackColor = False
         '
         'Button2
@@ -164,10 +164,10 @@ Partial Class CustomerRegistrationForm
         Me.Button2.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Transparent
-        Me.Button2.Location = New System.Drawing.Point(461, 450)
+        Me.Button2.Location = New System.Drawing.Point(421, 476)
         Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(129, 44)
+        Me.Button2.Size = New System.Drawing.Size(199, 64)
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "RESET"
         Me.Button2.UseVisualStyleBackColor = False
@@ -214,9 +214,9 @@ Partial Class CustomerRegistrationForm
         Me.Button3.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Transparent
-        Me.Button3.Location = New System.Drawing.Point(461, 371)
+        Me.Button3.Location = New System.Drawing.Point(544, 371)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(129, 44)
+        Me.Button3.Size = New System.Drawing.Size(199, 64)
         Me.Button3.TabIndex = 11
         Me.Button3.Text = "NEXT"
         Me.Button3.UseVisualStyleBackColor = False
@@ -226,9 +226,9 @@ Partial Class CustomerRegistrationForm
         Me.Button4.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.Transparent
-        Me.Button4.Location = New System.Drawing.Point(245, 371)
+        Me.Button4.Location = New System.Drawing.Point(47, 371)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(129, 44)
+        Me.Button4.Size = New System.Drawing.Size(199, 64)
         Me.Button4.TabIndex = 12
         Me.Button4.Text = "PREVIOUS"
         Me.Button4.UseVisualStyleBackColor = False
@@ -237,7 +237,8 @@ Partial Class CustomerRegistrationForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(804, 668)
+        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.ClientSize = New System.Drawing.Size(796, 668)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
