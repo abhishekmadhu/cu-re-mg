@@ -32,27 +32,27 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("MS Reference Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(349, 67)
+        Me.Label1.Location = New System.Drawing.Point(155, 24)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(179, 35)
+        Me.Label1.Size = New System.Drawing.Size(243, 28)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ARE YOU A"
+        Me.Label1.Text = "SELECT USER TYPE"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("MS Reference Sans Serif", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(400, 270)
+        Me.Label2.Location = New System.Drawing.Point(253, 147)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(89, 35)
+        Me.Label2.Size = New System.Drawing.Size(46, 28)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "OR A"
+        Me.Label2.Text = "OR"
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.Button1.Location = New System.Drawing.Point(340, 153)
+        Me.Button1.Location = New System.Drawing.Point(171, 72)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(208, 51)
         Me.Button1.TabIndex = 2
@@ -63,9 +63,9 @@ Partial Class Form1
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.Button2.Location = New System.Drawing.Point(330, 357)
+        Me.Button2.Location = New System.Drawing.Point(171, 203)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(217, 64)
+        Me.Button2.Size = New System.Drawing.Size(208, 51)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "CUSTOMER"
         Me.Button2.UseVisualStyleBackColor = True
@@ -73,7 +73,7 @@ Partial Class Form1
         'Form1
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.ClientSize = New System.Drawing.Size(887, 564)
+        Me.ClientSize = New System.Drawing.Size(574, 326)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
