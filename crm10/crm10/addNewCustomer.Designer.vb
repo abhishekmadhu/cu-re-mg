@@ -25,10 +25,10 @@ Partial Class addNewCustomer
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(addNewCustomer))
         Me.Label6 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.DataSet31 = New crm10.DataSet3()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.DataSet31 = New crm10.DataSet3()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -68,6 +68,11 @@ Partial Class addNewCustomer
         Me.ListBox1.Sorted = True
         Me.ListBox1.TabIndex = 28
         '
+        'DataSet31
+        '
+        Me.DataSet31.DataSetName = "DataSet3"
+        Me.DataSet31.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.SystemColors.MenuHighlight
@@ -86,7 +91,7 @@ Partial Class addNewCustomer
         Me.Button1.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Transparent
-        Me.Button1.Location = New System.Drawing.Point(313, 440)
+        Me.Button1.Location = New System.Drawing.Point(299, 441)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(161, 64)
@@ -103,11 +108,6 @@ Partial Class addNewCustomer
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(144, 28)
         Me.TextBox4.TabIndex = 23
-        '
-        'DataSet31
-        '
-        Me.DataSet31.DataSetName = "DataSet3"
-        Me.DataSet31.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'TextBox3
         '
