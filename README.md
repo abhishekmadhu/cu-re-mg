@@ -7,7 +7,8 @@
 
 ### How to run:
 (The easy way)
-* Find the ".exe" file in the main directory and download and run it.
+* Find the ".exe" file in the main directory and download and run it 
+(to be uploaded very soon).
 
 
 ### How to run:
