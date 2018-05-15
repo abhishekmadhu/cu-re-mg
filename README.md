@@ -1,4 +1,3 @@
-# cu-re-mg
 ## Customer Relationship Management
 ### Software Required:
 1. Visual Studio (VS) Community/Professional/Enterprise 2017 or Higher
