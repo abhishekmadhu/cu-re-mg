@@ -1,6 +1,6 @@
 ## Customer Relationship Management Software
 #### (using [VB.NET](https://en.wikipedia.org/wiki/Visual_Basic_.NET))
-### Software Required:
+### Requirements:
 1. Visual Studio (VS) Community/Professional/Enterprise 2017 or Higher
 2. VB.NET Runtime environment on VS
 3. 4GB of RAM to Compile (if you require to compile from the source)
